@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-sm-12">
+    <div id="chart" [chart]="chart"></div>
+  </div>
+</div>
+
+<div class="float menu" (click)="showModal()">
+  <i class="fa fa-filter filter-button"></i>
+</div>
+<div class="float clear" (click)="resetFilter()">
+  <i class="fa fa-refresh filter-button"></i>
+</div>
+
+<div *ngIf="bShowFilterModal">
+  <app-filtermodal (onFilterClick)="hideModal()" (onFromChosen)="fromDate = $event" (onToChosen)="toDate = $event"></app-filtermodal>
+</div>
+
+<div class="overlay" *ngIf="bShowFilterModal">
+
+</div>
+
