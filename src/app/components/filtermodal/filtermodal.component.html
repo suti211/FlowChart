@@ -1,0 +1,30 @@
+<div class="container">
+  <div class="center">
+    <div class="row">
+      <div class="col-sm-12 title" >
+        <h4>Filter by date</h4>
+        <hr>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h5>From: </h5>
+        <input [(ngModel)]="fromDate" type="date">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h5>To: </h5>
+        <input [(ngModel)]="toDate" type="date">
+      </div>
+    </div>
+
+    <div class="row title">
+      <div class="col-sm-12">
+        <button type="button" class="btn btn-primary" (click)="filter()">Filter</button>
+      </div>
+    </div>
+  </div>
+</div>

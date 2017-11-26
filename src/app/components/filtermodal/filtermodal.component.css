@@ -1,0 +1,33 @@
+.container{
+  top: 10px;
+  left: 70px;
+  position: fixed;
+  z-index: 2;
+  background-color: #FFFFFF;
+  margin: 1rem;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.center{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.title{
+  text-align: center;
+}
+
+h5{
+  display: inline;
+}
+
+button{
+  margin-bottom: 5px;
+}
+
+input{
+  float: right;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
